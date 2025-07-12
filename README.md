@@ -1,55 +1,39 @@
-# MeuCoach.AI - Formulário de Cadastro de Usuário
+# MeuCoach.AI
 
-Esta é a página inicial de cadastro do aplicativo **MeuCoach.AI**, que coleta informações do usuário para gerar planos de treino personalizados usando Inteligência Artificial.
+## Objetivo do Aplicativo
 
----
+O **MeuCoach.AI** é uma aplicação inteligente que ajuda as pessoas a alcançarem seus objetivos de saúde e bem-estar. Utilizando inteligência artificial, o app cria planos de treino personalizados com base nas características físicas, objetivos pessoais e histórico de saúde de cada usuário, além de dados em tempo real.
 
-## Sobre
+## Sobre esta Página de Cadastro
 
-A página permite que o usuário informe suas características físicas, objetivos de saúde e histórico de doenças para receber sugestões iniciais de treino.
+Esta página é o primeiro passo para usar o MeuCoach.AI. Aqui, o usuário preenche um questionário completo com informações importantes, como:
+
+- Dados pessoais (nome, idade, peso, altura)
+- Objetivos principais (ex: perda de peso, ganho de massa, etc)
+- Condições de saúde e doenças pré-existentes
+- Frequência de atividade física atual
+- Tempo disponível para treinos diários
+
+Com esses dados, a aplicação poderá oferecer planos de treino iniciais e, futuramente, mais personalizados usando IA.
 
 ---
 
 ## Como usar
 
-1. Faça o download ou clone este repositório.
-
-2. Abra o arquivo `index.html` no seu navegador para testar localmente.
-
-3. Para publicar online, faça o upload dos arquivos (`index.html`, `style.css` e `script.js`) em um repositório GitHub e configure o GitHub Pages (veja abaixo).
+1. Abra o arquivo `index.html` em seu navegador para testar localmente.
+2. Para publicar online, faça upload dos arquivos (`index.html`, `style.css` e `script.js`) em um repositório público no GitHub.
+3. Ative o GitHub Pages nas configurações do repositório para disponibilizar a página na web.
 
 ---
 
-## Publicação via GitHub Pages
+## Próximos Passos do Projeto
 
-- Crie um repositório público no GitHub.
-- Envie os arquivos `index.html`, `style.css` e `script.js` para o repositório.
-- Vá em **Settings > Pages** e configure para servir a partir da branch `main` ou `master`, raiz (`/root`).
-- Acesse o link fornecido pelo GitHub para visualizar seu formulário online.
-
----
-
-## Estrutura do projeto
-
-- `index.html` - página HTML principal com o formulário
-- `style.css` - estilos CSS para a página
-- `script.js` - JavaScript para interatividade do formulário
+- Desenvolvimento da IA para personalizar treinos automaticamente.
+- Implementação de backend para salvar e gerenciar usuários.
+- Adição de login e perfil de usuário.
+- Integração com dispositivos para coleta de dados em tempo real.
 
 ---
 
-## Próximos passos
-
-- Integrar backend para salvar dados e gerar treinos reais.
-- Implementar autenticação de usuários.
-- Melhorar o design responsivo.
-
----
-
-## Contato
-
-Dúvidas ou sugestões? Entre em contato!
-
----
-
-> **Aviso:** Este projeto é um protótipo front-end e não possui funcionalidades de backend ou IA implementadas.
+Obrigado por acompanhar o projeto MeuCoach.AI!
 
