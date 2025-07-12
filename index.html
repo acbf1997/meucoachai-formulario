@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MeuCoach.AI – Cadastro de Usuário</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+  <div class="max-w-2xl w-full bg-white p-6 rounded-xl shadow-md" id="formContainer">
+    <h2 class="text-3xl font-bold mb-6 text-blue-700">MeuCoach.AI – Cadastro de Usuário</h2>
+    <form id="healthForm">
+      <label class="block mb-2">Nome:
+        <input type="text" name="nome" class="input" required />
+      </label>
+
+      <label class="block mb-2">Idade:
+        <input type="number" name="idade" class="input" required />
+      </label>
+
+      <label class="block mb-2">Altura (cm):
+        <input type="number" name="altura" class="input" required />
+      </label>
+
+      <label class="block mb-2">Peso (kg):
+        <input type="number" name="peso" class="input" required />
+      </label>
+
+      <label class="block mb-2">Quais são seus objetivos?
+        <select name="objetivo" id="objetivo" class="input" required>
+          <option value="">Selecione</option>
+          <option value="perder-peso">Perder peso</option>
+          <option value="ganhar-massa">Ganhar massa muscular</option>
+          <option value="melhorar-condicao">Melhorar condição física</option>
+          <option value="aumentar-flexibilidade">Aumentar flexibilidade</option>
+          <option value="reduzir-estresse">Reduzir estresse</option>
+          <option value="outro">Outro</option>
+        </select>
+      </label>
+
+      <label class="block mb-2">Você possui algum problema de saúde?
+        <select name="saude" id="saude" class="input" required>
+          <option value="">Selecione uma condição</option>
+          <option value="Nenhum">Nenhum</option>
+          <option value="Hipertensão">Hipertensão</option>
+          <option value="Diabetes">Diabetes</option>
+          <option value="Asma">Asma</option>
+          <option value="Problemas cardíacos">Problemas cardíacos</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </label>
+
+      <div id="outroSaudeContainer" class="mb-2 hidden">
+        <label class="block mb-2">Descreva sua condição:
+          <textarea name="saudeOutro" rows="3" class="input" placeholder="Descreva aqui..."></textarea>
+        </label>
+      </div>
+
+      <label class="block mb-4">Você pratica atividade física atualmente?
+        <select name="atividade" class="input" required>
+          <option value="">Selecione</option>
+          <option value="nao">Não</option>
+          <option value="sim-ocasional">Sim, ocasionalmente</option>
+          <option value="sim-regular">Sim, regularmente</option>
+        </select>
+      </label>
+
+      <div class="flex gap-4">
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Enviar</button>
+        <button type="button" id="resetBtn" class="bg-gray-300 text-black py-2 px-4 rounded hover:bg-gray-400">Resetar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="max-w-2xl w-full bg-green-100 p-6 rounded-xl shadow-md mt-10 hidden" id="resultadoContainer">
+    <h2 class="text-2xl font-bold mb-4 text-green-800">Plano Inicial Sugerido</h2>
+    <p id="mensagemResultado" class="text-lg"></p>
+    <button id="voltarBtn" class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Voltar ao cadastro</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
