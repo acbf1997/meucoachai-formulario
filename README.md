@@ -16,15 +16,6 @@ Esta página é o primeiro passo para usar o MeuCoach.AI. Aqui, o usuário preen
 
 Com esses dados, a aplicação poderá oferecer planos de treino iniciais e, futuramente, mais personalizados usando IA.
 
----
-
-## Como usar
-
-1. Abra o arquivo `index.html` em seu navegador para testar localmente.
-2. Para publicar online, faça upload dos arquivos (`index.html`, `style.css` e `script.js`) em um repositório público no GitHub.
-3. Ative o GitHub Pages nas configurações do repositório para disponibilizar a página na web.
-
----
 
 ## Próximos Passos do Projeto
 
